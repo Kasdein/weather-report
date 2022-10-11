@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/SimpleCSS-stub/images/icons/100-fill.svg">
+    <title>Weather Report</title>
+    <style>
+        body{
+            background-image: url('images/background-gif.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            margin:0;
+            background-color: rgb(210, 234, 255);
+        }
+        h4{
+            text-align: center;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: #663399;
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+        #report-container{
+            width: 500px;
+            height: 600px;
+            background-color: aquamarine;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            filter: drop-shadow(0px 0px 10px gray);
+        }
+        #hero-container{
+            width: 500px;
+            height: 500px;
+            position:relative;
+        }
+        #days-container{
+            background-color: rgb(152, 219, 236);
+            height: 100px;
+            font-size: 0;
+        }
+        .day{
+            width: 100px;
+            height: 100px;
+            display:inline-block;
+            background-color: rgb(152, 219, 236);
+        }
+        .button:hover {
+            border-left: 5px solid rgb(255, 206, 115);
+            border-bottom: 5px solid rgb(255, 206, 115);
+            border-right: 5px solid rgb(255, 206, 115);
+            width: 90px;
+            height: 95px;
+        }
+        .button:active {
+            background-color: azure;
+        }
+        .weather-image{
+            width: 40px;
+            height: 40px;
+            margin-top: 10px;
+            display:block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        #city-text-norwich{
+            position: absolute;
+            margin: 0;
+            font-size: 40px;
+            color: rgba(253,222,138,.55);
+            left: 10px;
+            bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="report-container">
+        <div id="hero-container">
+            <h4 id="city-text-norwich">Norwich</h4>
+            <img src="images\norwich.jpg">
+        </div>
+        <div id="days-container">
+            <div class="day button">
+                <h4>Mon</h4>
+                <img class="weather-image" src="images/icons/100.svg">
+            </div>
+            <div class="day button">
+                <h4>Tue</h4>
+                <img class="weather-image" src="images/icons/102.svg">
+            </div>
+            <div class="day button">
+                <h4>Wed</h4>
+                <img class="weather-image" src="images/icons/103.svg">
+            </div>
+            <div class="day button">
+                <h4>Thu</h4>
+                <img class="weather-image" src="images/icons/101.svg">
+            </div>
+            <div class="day button">
+                <h4>Fri</h4>
+                <img class="weather-image" src="images/icons/104.svg">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<img 

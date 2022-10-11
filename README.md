@@ -1,2 +1,1 @@
-# weather-report
- inacurately reports Norwich weather
+# simple-css-stub
